@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="Image_unsplash_exercice" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionPhotos" destination="ipc-L1-SOa" id="Zue-oz-El8"/>
+                <outlet property="photosFull" destination="LHo-NJ-2eE" id="j2T-hx-Gou"/>
+                <outlet property="view" destination="X3F-vK-NRc" id="bEE-jH-3Dc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="X3F-vK-NRc">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-gallery" translatesAutoresizingMaskIntoConstraints="NO" id="LHo-NJ-2eE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipc-L1-SOa">
+                    <rect key="frame" x="20" y="758" width="374" height="99"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="99" id="Vyk-xr-u6S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KfP-8S-wu6"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LHo-NJ-2eE" secondAttribute="trailing" id="8cJ-Gw-cbs"/>
+                <constraint firstItem="ipc-L1-SOa" firstAttribute="leading" secondItem="KfP-8S-wu6" secondAttribute="leading" constant="20" id="BuD-PE-Hjf"/>
+                <constraint firstItem="LHo-NJ-2eE" firstAttribute="top" secondItem="X3F-vK-NRc" secondAttribute="top" id="K4H-BL-JiS"/>
+                <constraint firstItem="KfP-8S-wu6" firstAttribute="bottom" secondItem="ipc-L1-SOa" secondAttribute="bottom" constant="5" id="Req-NR-gTj"/>
+                <constraint firstAttribute="bottom" secondItem="LHo-NJ-2eE" secondAttribute="bottom" id="TWQ-zV-03x"/>
+                <constraint firstItem="LHo-NJ-2eE" firstAttribute="leading" secondItem="X3F-vK-NRc" secondAttribute="leading" id="WHy-ub-oH9"/>
+                <constraint firstItem="KfP-8S-wu6" firstAttribute="trailing" secondItem="ipc-L1-SOa" secondAttribute="trailing" constant="20" id="mdR-Kt-gGd"/>
+            </constraints>
+            <point key="canvasLocation" x="-175.36231884057972" y="54.910714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image-gallery" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
